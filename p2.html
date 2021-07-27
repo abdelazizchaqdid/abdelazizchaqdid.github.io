@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+<meta charset="utf-8">
+<title>projets Website</title>
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--title-icon--------->
+<link rel="shortcut icon" href="images/icon.png">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--using FontAwesome---------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<style>
+	
+</style>
+
+</head>
+
+<body>
+	<!--main------------------------>
+	<section id="pmain">
+	<!--navigation-------------------------------->
+	<nav>
+	<!--logo--->
+	<img src="images/logo1.png" class='logo-img'>
+	<!--menu--------->
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li><a href="p1.html"><i class="fas fa-arrow-circle-left fa-3x" style="color:#292929 ;"></i></a></li>
+	<li><a href="index.html" ><i class="fas fa-home fa-3x" style="color:#1ED98B ;"></i></a></li>		
+	<li><a href="p3.html" ><i class="fas fa-arrow-circle-right fa-3x" style="color:#292929 ;"></i></a></li>
+	
+	</ul>
+	
+
+	<!-------- start translation------------------------------------>
+	<form id="form1" runat="server">
+		<div class="langs">
+			<a href="javascript:;" id="English" onclick="translateLanguage(this.id);"><span>En</span></a>
+			<a href="javascript:;" id="French" onclick="translateLanguage(this.id);"><span>FR </span></a>
+		</div>
+		<div id="google_translate_element" style="display: none"></div>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({ pageLanguage: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+			}
+		</script>
+		<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+			type="text/javascript"></script>
+		<script>
+			function translateLanguage(lang) {
+
+				var $frame = $('.goog-te-menu-frame:first');
+				if (!$frame.size()) {
+					alert("Error: Could not find Google translate frame.");
+					return false;
+				}
+				$frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+				return false;
+			}
+		</script>
+   </form>
+	</nav>
+	<!-------- ebd Translation------------------------------------>
+	<section id="projets">
+		<!--heading----------->
+		<br/><br/>
+		<h1 class="p-headind">Stage</h1>
+		<p>
+			<font style="border-bottom: 3px solid #1ED98B;">Intitulé du projets</font> : Base de données des publications scientifiques et travaux de recherche et de développement au sein de la Direction Générale de la Météorologie
+			<br/><br/>
+
+			<font style="border-bottom: 3px solid #1ED98B;">Mots clés</font> :
+			<font style="border-bottom: 3px solid #d9341e;">HTML</font>, 
+			<font style="border-bottom: 3px solid #d9341e;">CSS</font>,
+			<font style="border-bottom: 3px solid #d9341e;">Bootstrap</font>, 
+			<font style="border-bottom: 3px solid #d9341e;">PHP</font>, 
+			<font style="border-bottom: 3px solid #d9341e;">SGBD</font>, 
+			<font style="border-bottom: 3px solid #d9341e;">Jmerise</font>, 
+			<font style="border-bottom: 3px solid #d9341e;">Merise</font>, 
+			<font style="border-bottom: 3px solid #d9341e;">Database</font>
+			<br/><br/>
+
+			<font style="border-bottom: 3px solid #1ED98B;">Images </font> :
+			<br/><br/>
+
+		</p>
+		<!--projets-container------------>
+		<div class="p-container">
+		<!--projets-box-1-------->
+		<div class="p-box">
+		<!--bg-img------------->
+		<img src="images/p21.png">	
+		</div>
+
+		<!--projets-box-2-------->
+		<div class="p-box">
+		<!--bg-img------------->
+		<img src="images/p22.png">
+		</div>
+
+		<!--projets-box-3-------->
+		<div class="p-box">
+		<!--bg-img------------->
+		<img src="images/p23.png">
+		</div>
+
+		<!--projets-box-4-------->
+		<div class="p-box">
+		<!--bg-img------------->	
+		<img src="images/p24.png">
+		</div>
+
+		<!--projets-box-5-------->
+		<div class="p-box">
+		<!--bg-img------------->	
+		<img src="images/p25.png">
+		</div>
+
+		<!--projets-box-6-------->
+		<div class="p-box">
+		<!--bg-img------------->	
+		<img src="images/p26.png">
+		</div>
+
+		</div>
+		<br/>
+		<a href="fichiers/si2.pdf" class="p-headind">Voir le rapport</a>
+		</section>
+
+
+</body>
+</html>
